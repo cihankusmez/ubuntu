@@ -18,4 +18,13 @@ Sıfırdan ubuntu kurulumu
       sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
 
 6. Apache'yi tekrar başlat
-      sudo service apache2 restart
+      sudo service apache2 restarte
+      
+7. PHP Ekleri Kurmak
+      sudo apt-get install php5-cli php5-curl
+      
+8. Yedekleri PC'ye yükle
+
+9. PhpStorm Kurulumu
+
+10. PhpStorm Ayar Dosyalarını İçe Aktarma
