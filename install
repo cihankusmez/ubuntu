@@ -59,7 +59,12 @@ Sıfırdan ubuntu kurulumu
 
 10. /var/www klasörü altına vhosts klasörü açıp site yedeklerini açtığımız klasörün altına atıyoruz.
 
+11. Yüklediğimiz sitelerin .conf dosyalarını kopyalıyoruz
+      /etc/apache2/sites-available
+      sudo a2ensite site şeklinde siteleri aktif ediyoruz
+
 11. /etc/hosts dosyasını yedekten yüklüyoruz
+
 
 12. Database yedeklerini içe aktar
 
@@ -92,7 +97,9 @@ Sıfırdan ubuntu kurulumu
       curl -sS https://getcomposer.org/installer | php
       $ sudo mv composer.phar /usr/local/bin/composer
       $ sudo chmod +x /usr/local/bin/composer
-
+      
+18. Laravel Kurulumu
+      composer global require "laravel/installer"
       
 18. PhpStorm Kurulumu
       cd PhpStorm-162.1121.38/bin
