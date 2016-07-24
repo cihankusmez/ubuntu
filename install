@@ -26,6 +26,34 @@ Sıfırdan ubuntu kurulumu
 8. PHPMyAdmin Kurulumu
       sudo apt-get update
       sudo apt-get install phpmyadmin
+      sudo php5enmod mcrypt
+      sudo gedit /etc/apache2/apache2.conf
+      
+      Then add the following line to the end of the file.
+      Include /etc/phpmyadmin/apache.conf
+      
+      Then restart apache
+      /etc/init.d/apache2 restart
+      
+9. PHPMyAdmin üzerinden uzak sunucuya bağlanma ayarlarını yap
+      sudo gedit /etc/phpmyadmin/config.inc.php
+      
+      /* Advance to next server for rest of config */
+      $i++;
+      
+      satırını bul ve altına bu kodu düzenleyerek şekildeki gibi ekle
+      
+      /* Advance to next server for rest of config */
+      $i++;  
+      $cfg['Servers'][$i]['host']          = '';
+      $cfg['Servers'][$i]['port']          = '';
+      $cfg['Servers'][$i]['socket']        = '';
+      $cfg['Servers'][$i]['connect_type']  = 'tcp';
+      $cfg['Servers'][$i]['extension']     = 'mysql';
+      $cfg['Servers'][$i]['compress']      = FALSE;
+      $cfg['Servers'][$i]['auth_type']     = 'config';
+      $cfg['Servers'][$i]['user']          = 'username';
+      $cfg['Servers'][$i]['password']      = 'password';
       
 9. Yedekleri PC'ye yükle
 
