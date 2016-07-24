@@ -81,12 +81,27 @@ Sıfırdan ubuntu kurulumu
       sudo apt-get update
       sudo apt-get install git
       
-17. PhpStorm Kurulumu
+17. Composer kurulumundan önce cURL kullanmak için cacert.pem sertifikası yüklenmeli.
+      https://curl.haxx.se/ca/cacert.pem adresine tıklayın. Mouse'un sağ tuşu ile farklı kaydet deyin.
+      /home/cihan/cacert.pem gibi ana dizininize yükleyin.
+      
+      Terminal'e şu kodu yazın.
+      export CURL_CA_BUNDLE="/home/cihan/cacert.pem"
+
+17. Composer Kurulumu
+      curl -sS https://getcomposer.org/installer | php
+      $ sudo mv composer.phar /usr/local/bin/composer
+      $ sudo chmod +x /usr/local/bin/composer
+
+      
+18. PhpStorm Kurulumu
       cd PhpStorm-162.1121.38/bin
       sudo chmod +x phpstorm.sh
       sudo ./phpstorm.sh
       
-18. PhpStorm Kısayolunu Çıkartma (Sürekli sudo ./phpstorm.sh yazmak iyi değildir.)
+19. PhpStorm Kısayolunu Çıkartma (Sürekli sudo ./phpstorm.sh yazmak iyi değildir.)
       Tools >> Create Desktop Entry
 
-19. PhpStorm Ayar Dosyalarını İçe Aktarma
+20. PhpStorm Ayar Dosyalarını İçe Aktarma
+      File >> Import Settings (Daha önce aynı yerden export settings ile settings.jar dosyasını elde etmiştik.)
+      /home/cihan/PhpStorm-162.1121.38/settings.jar
