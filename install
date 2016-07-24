@@ -25,6 +25,18 @@ Sıfırdan ubuntu kurulumu
       
 8. Yedekleri PC'ye yükle
 
-9. PhpStorm Kurulumu
+9. .rpm dosyalarının kurulumu
+      sudo apt-get install alien
+      sudo alien my_package.rpm
+      sudo dpkg -i my_package.deb
 
-10. PhpStorm Ayar Dosyalarını İçe Aktarma
+10. JDK 8 Kurulumu
+      http://www.oracle.com/technetwork/java/javase/downloads
+      
+11. .sh Kurulumu
+      chmod +x /home/cihan/PhpStorm-162.1121.38/bin/phpstorm.sh
+      ./phpstorm.sh
+
+12. PhpStorm Kurulumu
+
+13. PhpStorm Ayar Dosyalarını İçe Aktarma
