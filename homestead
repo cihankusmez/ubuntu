@@ -1,0 +1,37 @@
+Ubuntu 15.10 / 14.04 Homestead Kurulumu
+
+1) Vagrant ve VirtualBox indir
+
+2) Vagrant Kur
+
+3) VirtualBox Kur
+
+4) vagrant -v
+
+5) vagrant box add laravel/homestead
+
+6) git clone https://github.com/laravel/homestead.git Homestead
+
+7) cd Homestead
+
+8) ls
+
+9) bash init.sh
+
+10) cd ~/.homestead
+
+11) Homestead dosyayı sublime yada phpstorm'da açıp inceleyelim
+
+12) ssh-keygen -t rsa -C "cihankusmez@gmail.com"
+
+13) homestead.yaml dosyasını editliyoruz.
+
+14) mkdir Code
+
+15) cd Homestead
+
+16) vagrant up  (vagrant provision makinayı kapatıp tekrar açar)
+
+17) 192.168.10.10 ip ile sunucuya girilince nginx hata sayfası
+
+18) vagrant ssh
