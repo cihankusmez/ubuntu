@@ -55,34 +55,38 @@ Sıfırdan ubuntu kurulumu
       $cfg['Servers'][$i]['user']          = 'username';
       $cfg['Servers'][$i]['password']      = 'password';
       
-10. Database yedeklerini içe aktar
+      
+
+10. /var/www klasörü altına vhosts klasörü açıp site yedeklerini açtığımız klasörün altına atıyoruz.
+
+11. /etc/hosts dosyasını yedekten yüklüyoruz
+
+12. Database yedeklerini içe aktar
 
       mysql -u username -p database_name < backup_name.sql
 
-      
-11. Yedekleri PC'ye yükle
+13. Yedekleri PC'ye yükle
 
-12. .rpm dosyalarının kurulumu
+14. .rpm dosyalarının kurulumu
       sudo apt-get install alien
       sudo alien my_package.rpm
       sudo dpkg -i my_package.deb
 
-13. JDK 8 Kurulumu
+15. JDK 8 Kurulumu
       sudo add-apt-repository ppa:webupd8team/java
       sudo apt-get update
       sudo apt-get install oracle-java8-installer
       
-14. Git Kurulumu
+16. Git Kurulumu
       sudo apt-get update
       sudo apt-get install git
       
-15. PhpStorm Kurulumu
+17. PhpStorm Kurulumu
       cd PhpStorm-162.1121.38/bin
       sudo chmod +x phpstorm.sh
       sudo ./phpstorm.sh
+      
+18. PhpStorm Kısayolunu Çıkartma (Sürekli sudo ./phpstorm.sh yazmak iyi değildir.)
+      Tools >> Create Desktop Entry
 
-16. PhpStorm Ayar Dosyalarını İçe Aktarma
-
-17. /var/www klasörü altına vhosts klasörü açıp site yedeklerini açtığımız klasörün altına atıyoruz.
-
-18. /etc/hosts dosyasını yedekten yüklüyoruz
+19. PhpStorm Ayar Dosyalarını İçe Aktarma
