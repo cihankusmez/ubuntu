@@ -133,3 +133,6 @@ Sıfırdan ubuntu kurulumu
       
       sudo chown -R $USER:$GROUP ~/.npm
       sudo chown -R $USER:$GROUP ~/.config
+      
+      Projenin içindeyken 
+      npm install --save-dev gulp
