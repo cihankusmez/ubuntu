@@ -130,3 +130,6 @@ Sıfırdan ubuntu kurulumu
       Proje dosyasının içinde iken bu komut yazılır
       
       sudo npm install
+      
+      sudo chown -R $USER:$GROUP ~/.npm
+      sudo chown -R $USER:$GROUP ~/.config
