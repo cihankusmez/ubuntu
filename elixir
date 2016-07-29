@@ -1,0 +1,25 @@
+#Laravel elixir
+
+1. Node Kurulumu Yapıyoruz
+    sudo apt-get install nodejs
+    sudo apt-get install npm
+    
+2. Gulp ve Bower kurulumunu yapıyoruz
+
+    sudo npm install gulp bower
+    
+3. .bowerrc dosyası oluşturuyoruz. (Proje ana dizinde)
+
+    {
+      "directory": "resources/assets/bower"
+    }
+    
+4. bower.json dosyası oluştur (Proje ana dizinde)
+
+    {
+      "name": "Proje"
+    }
+    
+
+
+
