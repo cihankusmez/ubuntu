@@ -4,6 +4,9 @@
     sudo apt-get install nodejs
     sudo apt-get install npm
     
+2. Gulp Kurulumunu Yapıyoruz
+    npm install -g gulp
+    
 2. Gulp ve Bower kurulumunu yapıyoruz
 
     sudo npm install gulp bower
