@@ -23,6 +23,7 @@ Sıfırdan ubuntu kurulumu
       
 7. PHP Ekleri Kurmak
       sudo apt-get install php5-cli php5-curl
+      sudo apt-get install php5-sybase (SQL Server)
       
 8. PHPMyAdmin Kurulumu
       sudo apt-get update
