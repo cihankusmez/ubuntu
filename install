@@ -137,3 +137,7 @@ Sıfırdan ubuntu kurulumu
       
       Projenin içindeyken 
       npm install --save-dev gulp
+      
+22. SSH KEY OLUŞTURMA
+
+ssh-keygen -t rsa -C "my_email@gmail.com"
