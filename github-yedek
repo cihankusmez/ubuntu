@@ -1,0 +1,7 @@
+Github'daki laravel repoyu tekrar bir pc ye indirip kurmak
+
+1. composer install
+2. .env dosyası oluşturmak
+
+php artisan cache:clear,
+composer dump-autoload
