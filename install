@@ -128,6 +128,8 @@ Sıfırdan ubuntu kurulumu
       sudo apt-get install npm
       sudo npm install --global gulp bower
       
+      ln -s /usr/bin/nodejs /usr/bin/node
+      
       Proje dosyasının içinde iken bu komut yazılır
       
       sudo npm install
